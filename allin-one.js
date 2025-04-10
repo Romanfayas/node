@@ -23,7 +23,8 @@ const CHAIN_ID = 97; // BSC Testnet
 
 
 const provider = new ethers.providers.JsonRpcProvider(BSC_TESTNET_RPC);
-const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+// const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const signer = new ethers.Wallet("3bd33efc26f0774808e901f488ca7dafad1f88359ac9f689ddc0be606875a122");
 
 
 const router = new ethers.Contract(
